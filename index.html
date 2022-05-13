@@ -12,13 +12,16 @@ git log --graph<br>
 Из мастер ветки
 git merge feature/1
 
-из под ветки feature/2
+из под ветки feature/2, с переносом указателя в конец мастер ветки
 git rebase feature/2
-
+         
+Делаем master ветку по умолчанию
+git config --global init.defaultBranch main
+  
 На гитхабе меняем тут https://github.com/ayupovazamat/gitflow/settings/branches
 
 Работаем над фичей в соответствующей ветке
-подтягиваем свежий dev
+подтягиваем свежий dev 
 git merge dev
 
 и сливаем с dev на гитхабе
